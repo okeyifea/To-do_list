@@ -1,7 +1,9 @@
 function addTask() {
-    let taskInput = document.getElementById("text-input");
-    let taskList = document.getElementById("task-list");
+    let taskInput = document.getElementById("textinput");
+    let taskList = document.getElementById("tasklist");
 
+    console.log('taskInput')
+   
     if (taskInput.value.trim() === "") return;
 
     let li = document.createElement("li");
@@ -15,4 +17,5 @@ function addTask() {
     taskList.appendChild(li);
 
     taskInput.value = "";
+    console.log(taskInput.value)
 }
