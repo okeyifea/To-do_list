@@ -20,35 +20,6 @@ This is a simple **To-Do List App** built using **HTML, CSS, and JavaScript**. T
 2. Click the **ADD** button to add the task.
 3. Click the ❌ button next to a task to remove it.
 
-## 📂 Project Structure
-```
-📂 To-Do List Project
-├── 📄 index.html  (Main structure)
-├── 📄 style.css   (Styling the app)
-├── 📄 script.js   (JavaScript logic)
-```
-
-## 📝 Code Snippets
-### JavaScript Code for Adding Tasks
-```js
-function addTask() {
-    let taskInput = document.getElementById("text-input");
-    let taskList = document.getElementById("task-list");
-
-    if (taskInput.value.trim() === "") return;
-
-    let li = document.createElement("li");
-    li.textContent = taskInput.value;
-
-    let deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "❌";
-    deleteBtn.onclick = () => li.remove();
-
-    li.appendChild(deleteBtn);
-    taskList.appendChild(li);
-    taskInput.value = "";
-}
-```
 
 ## 📌 Future Improvements
 - Add local storage support to save tasks.
